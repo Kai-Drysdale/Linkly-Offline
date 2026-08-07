@@ -1,0 +1,23 @@
+<Package xmlns="http://schemas.microsoft.com/navx/2015/manifest">
+  <App Id="ab88771a-e251-43f9-a88b-ac48cf4e73c8" Name="Linkly-Offline" Publisher="FUJIFILM Microchannel" Brief="" Description="" Version="24.4.1.0" CompatibilityId="0.0.0.0" PrivacyStatement="" EULA="" Help="" HelpBaseUrl="" Url="" Logo="" Platform="1.0.0.0" Application="24.0.0.0" Runtime="13.0" Target="OnPrem" ShowMyCode="False" />
+  <IdRanges>
+    <IdRange MinObjectId="50200" MaxObjectId="51050" />
+  </IdRanges>
+  <Dependencies>
+    <Dependency Id="5ecfc871-5d82-43f1-9c54-59685e82318d" Name="LS Central" Publisher="LS Retail" MinVersion="24.0.0.286" CompatibilityId="0.0.0.0" />
+    <Dependency Id="2a0547fa-f60f-401d-b1fe-c7c4be8fb230" Name="LS Central System App" Publisher="LS Retail" MinVersion="24.1.1.851" CompatibilityId="0.0.0.0" />
+  </Dependencies>
+  <InternalsVisibleTo />
+  <ScreenShots />
+  <SupportedLocales />
+  <Features>
+    <Feature>NOIMPLICITWITH</Feature>
+  </Features>
+  <PreprocessorSymbols />
+  <SuppressWarnings />
+  <ResourceExposurePolicy AllowDebugging="true" AllowDownloadingSource="false" IncludeSourceInSymbolFile="false" ApplyToDevExtension="false" />
+  <KeyVaultUrls />
+  <Source />
+  <Build By="AL Language Extension,17.0.2107262" Timestamp="2026-02-10T05:36:35.5851660Z" CompilerVersion="17.0.32.10174" />
+  <AlternateIds />
+</Package>

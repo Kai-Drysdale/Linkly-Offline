@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Galati-TEST POS",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "OnPrem",
+            "server": "http://localhost", //https://bc-app-d1.galatigroup.com.au/
+            "serverInstance": "LSPOS",
+            "authentication": "Windows",
+            "port": 7049,
+            "startupObjectId": 10000701,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}

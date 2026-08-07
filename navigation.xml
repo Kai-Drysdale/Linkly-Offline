@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<NavigationDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:schemas-microsoft-com:dynamics:NAV:MetaObjects">
+  <ActionContainers ActionContainerType="Departments">
+    <Actions xsi:type="ActionGroupDefinition" Caption="Linkly-Offline" ControlGUID="{9c1e6ab2-6ae7-4d0d-8583-73432f8e2011}">
+      <Actions xsi:type="ActionDefinition" PushAction="RunObject" RunObjectType="Page" TargetID="50200" DepartmentCategory="Administration" RunObjectSrcTable="50200" ControlGUID="{6a913582-83c0-4a7b-818c-7c06dba57a5b}" Name="EFTPOS Setup" CaptionML="ENU=EFTPOS Setup" ApplicationArea="#Basic" AdditionalSearchTermsML="ENU=EFTPOS Setup" CaptionTranslationKey="Page 1095052968 - Property 2879900210" AdditionalSearchTermsTranslationKey="Page 1095052968 - Property 3863440606" />
+      <Actions xsi:type="ActionDefinition" PushAction="RunObject" RunObjectType="Page" TargetID="50202" DepartmentCategory="Administration" RunObjectSrcTable="50202" ControlGUID="{af45ddab-7eba-4328-879d-5532e744fa40}" Name="EFTPOS Response Codes" CaptionML="ENU=EFTPOS Response Codes" ApplicationArea="#Basic" AdditionalSearchTermsML="ENU=EFTPOS Response Codes" CaptionTranslationKey="Page 3782406202 - Property 2879900210" AdditionalSearchTermsTranslationKey="Page 3782406202 - Property 3863440606" />
+      <Actions xsi:type="ActionDefinition" PushAction="RunObject" RunObjectType="Page" TargetID="50201" DepartmentCategory="Lists" RunObjectSrcTable="50201" ControlGUID="{536219d8-4b21-4258-ac2c-080a5644ecb5}" Name="EFTPOS Log" CaptionML="ENU=EFTPOS Log" ApplicationArea="#Basic" AdditionalSearchTermsML="ENU=EFTPOS Log" CaptionTranslationKey="Page 3793988473 - Property 2879900210" AdditionalSearchTermsTranslationKey="Page 3793988473 - Property 3863440606" />
+    </Actions>
+  </ActionContainers>
+  <NavigationChanges>
+    <ActionChange TargetID="99008900" TargetType="Page" />
+    <ActionChange TargetID="99001475" TargetType="Page" />
+    <ActionChange TargetID="99001468" TargetType="Page" />
+    <ActionChange TargetID="99001631" TargetType="Page" />
+  </NavigationChanges>
+</NavigationDefinition>

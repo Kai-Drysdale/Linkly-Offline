@@ -1,0 +1,46 @@
+{
+  "id": "ab88771a-e251-43f9-a88b-ac48cf4e73c8",
+  "name": "Linkly-Offline",
+  "publisher": "FUJIFILM Microchannel",
+  "version": "24.4.1.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "runtime": "13.0",
+  "target": "OnPrem",
+  "idRanges": [
+    {
+      "from": 50200,
+      "to": 51050
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "5ecfc871-5d82-43f1-9c54-59685e82318d",
+      "name": "LS Central",
+      "publisher": "LS Retail",
+      "version": "24.0.0.286"
+    },
+    {
+      "id": "2a0547fa-f60f-401d-b1fe-c7c4be8fb230",
+      "name": "LS Central System App",
+      "publisher": "LS Retail",
+      "version": "24.1.1.851"
+    }
+  ],
+  "features": [
+    "NoImplicitWith"
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false,
+    "applyToDevExtension": false
+  }
+}
