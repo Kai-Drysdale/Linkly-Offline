@@ -165,7 +165,7 @@ Codeunit 50205 "EFT EFTPOS POS Popup"
 
         //update:kevin
         if CloseCommand_g = 'OK' then begin
-            // update by Kai for version 24.4.0.1, adds check for if EFTPOS ammount is 0
+            // if statement added by Kai to fix 0 EFTPOS issue
             if (GPayment = 0) and (GCashOut = 0) then begin
                 Message('The EFTPOS ammount must be greater than zero');
                 exit;
@@ -173,7 +173,7 @@ Codeunit 50205 "EFT EFTPOS POS Popup"
             Clear(RespCode_L);
             Clear(EFTPOSCaptureResp_LC);
             EFTPOSCaptureResp_LC.SetPOSTrans(GTrans);
-            EFTPOSCaptureResp_LC.SetParamsPurchAuth(GBalance, GCashOut, GRefunds, not EFTSetup_LT."Debug Mode");
+            EFTPOSCaptureResp_LC.SetParamsPurchAuth(GPayment, GCashOut, GRefunds, not EFTSetup_LT."Debug Mode"); //changed to GPayment
             EFTPOSCaptureResp_LC.DoTransactionV2();
             RespCode_L := EFTPOSCaptureResp_LC.GetResponse;
         end;
@@ -310,7 +310,7 @@ Codeunit 50205 "EFT EFTPOS POS Popup"
                             Message(Text102);
                             GPayment := GBalance;
                         end;
-                        GBalance := GPayment + GCashOut;
+                        //GBalance := GPayment + GCashOut; removed by Kai in version 24.4.0.2 to fix double charge cash out split payment
                     end;
                     UpdateSurcharge;
                     ShowInfo;
